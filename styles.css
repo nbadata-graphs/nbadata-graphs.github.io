@@ -41,13 +41,13 @@ header nav a:hover {
 }
 
 .team-logo.hovered {
-  transform: scale(1.2);
-  box-shadow: 0 0 15px #f59e0b;
+  transform: scale(1.1);
+  box-shadow: 0 0 5px #f59e0b; /* moins intense */
 }
 
 .team-logo.active {
   border-color: #f59e0b;
-  box-shadow: 0 0 25px #f59e0b;
+  box-shadow: 0 0 10px #f59e0b; /* moins intense */
 }
 
 .graph-display {
@@ -69,3 +69,4 @@ footer {
   background-color: #1c1c1c;
   border-top: 3px solid #f59e0b;
 }
+
