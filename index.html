@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Graphiques — Mon site</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Mes graphiques</h1>
+      <p class="tagline">Des visualisations quotidiennes — automatique et simple.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="left">
+        <p>Dernière mise à jour : <span id="lastUpdated">—</span></p>
+      </div>
+      <div class="right">
+        <button id="refreshBtn">Recharger les images</button>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <!-- Placeholders: remplace ou ajoute des <figure> avec tes images dans images/ -->
+      <figure class="card">
+        <img data-src="images/graph1.png" alt="Graphique 1" class="thumb lazy">
+        <figcaption>Graphique 1 — description courte</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img data-src="images/graph2.png" alt="Graphique 2" class="thumb lazy">
+        <figcaption>Graphique 2 — description courte</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img data-src="images/graph3.png" alt="Graphique 3" class="thumb lazy">
+        <figcaption>Graphique 3 — description courte</figcaption>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- Modal pour afficher l'image en grand -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Image agrandie">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+      <img id="modalImg" src="" alt="">
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Site généré automatiquement — Déposé sur GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
