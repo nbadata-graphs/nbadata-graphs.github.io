@@ -1,0 +1,71 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #0f1724, #1e293b);
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  background-color: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #f59e0b; /* couleur basketball */
+}
+
+header nav a {
+  color: #f59e0b;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.teams {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.team-logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 3px solid transparent;
+}
+
+.team-logo.hovered {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #f59e0b;
+}
+
+.team-logo.active {
+  border-color: #f59e0b;
+  box-shadow: 0 0 25px #f59e0b;
+}
+
+.graph-display {
+  text-align: center;
+  padding: 30px;
+}
+
+.graph-display img {
+  max-width: 90%;
+  height: auto;
+  border: 3px solid #f59e0b;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #f59e0b;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1c1c1c;
+  border-top: 3px solid #f59e0b;
+}
